@@ -21,12 +21,6 @@ body{
     height: 100%;
     font-size: small;
 }
-
-/* .pito, .puto{
-    font-weight: 1000; 
-    negrito
-} */
-
 .logoargprog{
     width: 12%;
     height: 100%;
@@ -69,8 +63,8 @@ body{
     color: darkgray;
     transition: 0.5s;
     transform: translateY(-10px);
-    -webkit-box-shadow: 7px 11px 15px 7px #000000; 
-    box-shadow: 7px 11px 15px 7px #000000;
+    -webkit-box-shadow: 2px 10px 15px 7px rgba(0,0,0,0.77); 
+    box-shadow: 2px 10px 15px 7px rgba(0,0,0,0.77);
 }
 .button2{
     display:flex;
@@ -80,35 +74,88 @@ body{
 }
 .container-profile{
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     height: 40em;
-    background-color: blue;
+    background-color: lightgray;
     margin: 0.6em;
     border-radius: 0.6em;
     border: 1px solid red;
 }
-.banner{
-    width: 100%;
-    height: 65%;
-    border-top-left-radius: 0.6em;
-    border-top-right-radius: 0.6em;
-}
-
 .imgbanner{
     width: 100%;
-    height: 70%;
+    height: 63%;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
+    background-image: url(img/encabezado2.jpeg);
+    background-repeat: no-repeat;
 }
-.profile{
+.imgNEditContainer{
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
     padding: 1.2em;
+    margin-left: 5em;
+    width: 19%;
+    height: 75%;
 }
+.circulo {
+    display: flex;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    border: 0.6em solid black;
+    background-image: url(img/perfil2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.editButtonProfile {
+    padding-bottom: 0.9em;
+}
+.profileDataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 26%;
+    width: 96%;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 2.8em;
+    border-radius: 10px;
+}
+.nameNContentContainer{
+    width: 50%;
+    height: 60%;
+}
+.nameContainer{
+    padding-left: 2em;
+    height: 35%;
+}
+.contentContainer{
+    padding-left: 2em;
+    height: 80%;
+}
+.dataContainer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 50%;
+    height: 100%;
+}
+.buttons{
+    display: flex;
+    padding-left: 2em;
+    height: 40%;
+    width: 37%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .acercadeContainer{
     display: flex;
     justify-content: space-between;
     padding: 1.2em;
     margin: 0.6em;
-    height: 8em;
+    height: 9em;
     background-color: lightgray;
     border: 0.06em solid red;
     border-radius: 0.6em; 
@@ -128,48 +175,158 @@ body{
     height: 50%;
     width: 100%;
 }
-.editButton{
+.editButtonAcercade{
     display: flex;
     width: 9%;
     height: 100%;
     align-items: start;
     justify-content: flex-end;
 }
+
 .experiencenEducationContainer{
     display: flex;
+    flex-wrap: wrap;
     padding: 1.2em;
     margin: 0.6em;
-    height: 40em;
-    background-color: blue;
-    border: 0.06em solid #f5f5f5;
+    height: 47em;
+    background-color: lightgray;
+    border: 0.06em solid red;
     border-radius: 0.6em; 
 }
-.addButton{
+.experienceContainer{
     display: flex;
-    width: 9%;
-    height: 50%;
-    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+}
+.experienceTittle{
+    width: 88%;
+    height: 23%;
+}
+.asideAddButton {
+    display: flex;
+    justify-content: right;
+    width: 12%;
+    height: 1.4em;
+}
+.experienceExample {
+    display: flex;
+    width: 88%;
+    height: 100%;
+}
+.experienceExample:hover{
+    transform: translate(10px,10px);
+    transition: 0.5s;
+    -webkit-box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77); 
+    box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77);
+}
+.imgExperienceContainer {
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
+    width: 11%;
+    height: 100%;
+}
+.experienceExampleTittleNDescription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 89%;
+    height: 100%;
+}
+.experienceExampleSubtittle {
+    width: 100%;
+    height: 16%;
+}
+.experienceExampleDescription {
+    width: 100%;
+    height: 81%;
+}
+.editButtonsEnE{
+    display: flex;
+    width: 12%;
+    height: 10%;
+    align-items: center;
+    justify-content: right;
+}
+.editButtonEnE{
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+.deleteButtonEnE{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+.educationContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 54%;
+}
+.educationTittle{
+    width: 88%;
+    height: 11%;
+}
+.educationExample{
+    display: flex;
+    width: 88%;
+    height: 46%;
+}
+.educationExample:hover{
+    transform: translate(10px,10px);
+    transition: 0.5s;
+    -webkit-box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77); 
+    box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77);
+}
+.imgEducationContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 11%;
+    height: 60%;
+}
+.educationExampleTittleNDescription{
+    width: 100%;
+    height: 81%;
+}
+.educationExampleSubtittle{
+    width: 100%;
+    height: 28%;
+}
+.educationExampleDescription{
+    width: 100%;
+    height: 85%;
+}
+
+.addButton {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    align-items: start;
+    justify-content: end;
+    font-size: 1.6em;
+}
+.addButton:hover{
+    cursor: pointer;
 }
 .hardNSoftSkillsContainer{
     display: flex;
     padding: 1.2em;
     flex-wrap: wrap;
     margin: 0.6em;
-    height: 34em;
+    height: 32em;
     justify-content: space-between;
     background-color: lightgray;
     border: 0.06em solid red;
     border-radius: 0.6em; 
 }
-.hardNSoftSkillsTittleNAddbutton{
-    display: flex;
-    width: 100%;
-    height: 12%;
+.iPointerEditButtonsHSS:hover{
+    cursor: pointer;
 }
 .hardNSoftSkillsTittle{
-    height: 100%;
-    width: 100%;
+    height: 9%;
+    width: 88%;
 }
 .hardNSoftSkills{
     display: flex;
@@ -178,27 +335,6 @@ body{
     height: 79%;
     flex-wrap: wrap;
 }
-/* .boxSkills{
-    display: flex;
-    background-color: red;
-    justify-content: space-between;
-    height: 41%;
-    width: 34%;
-    flex-wrap: wrap;
-} */
-/* .boxSkillsContainer{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    justify-content: flex-start;
-} */
-/* .boxSkillsProgress{
-    display: flex;
-    width: 80%;
-    height: 100%;
-    background-color: violet;
-} */
 
 .languagesHSSContainer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -210,8 +346,8 @@ body{
 }
 .languagesHSSContainer:hover{
     transform: translate(-10px,-10px);
-    -webkit-box-shadow: 10px 11px 15px 5px #000000; 
-    box-shadow: 10px 11px 15px 5px #000000;
+    -webkit-box-shadow: 10px 11px 15px 5px rgba(0,0,0,0.77); 
+    box-shadow: 10px 11px 15px 5px rgba(0,0,0,0.77);
     transition: 0.5s;
 }
 .ulli{
@@ -232,6 +368,7 @@ body{
     width: 12.5%; 
     padding-left: 0.6em;
 }
+
 /* barra de progreso circular */
 .container {
     position: relative;
@@ -373,39 +510,61 @@ svg circle:nth-child(2) {
     stroke: brown;
 }
 /* fin barra de progreso circular */
-.boxSkillsEdit{
-    display: flex;
-    width: 20%;
-    background-color: yellow;
-}
-.boxSkillsEditButtons{
-    width: 50%;
-}
+
 .projectsContainer{
     display: flex;
+    flex-wrap: wrap;
     padding: 1.2em;
     margin: 0.6em;
-    height:8em;
-    background-color: blue;
-    border: 0.06em solid #f5f5f5;
+    height:17em;
+    background-color: lightgray;
+    border: 0.06em solid red;
     border-radius: 0.6em; 
 }
-.projects{
-    display: flex;
-    width: 91%;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-}
 .projectsTittle{
-    height: 50%;
-    width: 100%;
+    display: flex;
+    height: 15%;
+    width: 88%;
+    align-items: end;
+    justify-content: flex-start;
 }
-.projectsDescriptions{
-    height: 50%;
-    width: 100%;
+.projectsExampleContainer{
+    height: 80%;
+    width: 88%;
 }
-.paralelogramo {
+.projectsExampleContainer:hover{
+    transform: translate(10px,10px);
+    transition: 0.5s;
+    -webkit-box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77); 
+    box-shadow: -8px -5px 15px 5px rgba(0,0,0,0.77);
+}
+.projectsExampleSubtittleContainer{
+    width: 100%;
+    height: 20%;
+    color: #0a66c2;
+}
+.projectsExampleDescriptionContainer{
+    width: 100%;
+    height: 80%;
+}
+.buttonsProjects{
+    display: flex;
+    width: 12%;
+    height: 16%;
+    align-items: center;
+    justify-content: right;
+}
+.editButtonProjects{
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+.deleteButtonProjects{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+/* .paralelogramo {
     width: 80%;
     border: 0.06em solid #f5f5f5;
     border-radius: 0.6em; 
@@ -414,13 +573,5 @@ svg circle:nth-child(2) {
     -ms-transform: skew(20deg);
     -o-transform: skew(20deg);
     transform: skew(20deg);
-}
+}*/
 
-.circulo {
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #5cb85c;
-}
